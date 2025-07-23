@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Age Calculator - Calculate Your Exact Age in Years, Months, & Days</title>
+    <meta name="description" content="A free, fast, and accurate age calculator to find your exact chronological age in years, months, and days. Simply enter your date of birth to get started.">
+    <meta name="keywords" content="age calculator, calculate age, how old am i, date of birth calculator, exact age calculator, online age calculator">
+    <meta name="author" content="Your Website Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Age Calculator - Find Your Exact Age Instantly">
+    <meta property="og:description" content="Calculate your age down to the day with our easy-to-use and mobile-friendly age calculator.">
+    <meta property="og:image" content="https://your-website.com/images/age-calculator-social-image.png"> <!-- **Important:** Create and link to an image for social sharing -->
+    <meta property="og:url" content="https://your-website.com/age-calculator">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Age Calculator - Find Your Exact Age Instantly">
+    <meta name="twitter:description" content="Calculate your age down to the day with our easy-to-use and mobile-friendly age calculator.">
+    <meta name="twitter:image" content="https://your-website.com/images/age-calculator-social-image.png"> <!-- **Important:** Same image as og:image -->
+
+    <!-- Google Fonts (Modern & Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Age Calculator",
+      "description": "Calculate the exact age in years, months, and days from a given date of birth.",
+      "applicationCategory": "Tool",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires a modern web browser with JavaScript enabled.",
+      "url": "https://your-website.com/age-calculator"
+    }
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">AgeWise</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="calculator-section">
+                <h1>Age Calculator</h1>
+                <p class="subtitle">Find out your exact age in years, months, and days.</p>
+                
+                <div class="calculator-card">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="day">Day</label>
+                            <input type="number" id="day" placeholder="DD" min="1" max="31">
+                        </div>
+                        <div class="input-field">
+                            <label for="month">Month</label>
+                            <input type="number" id="month" placeholder="MM" min="1" max="12">
+                        </div>
+                        <div class="input-field">
+                            <label for="year">Year</label>
+                            <input type="number" id="year" placeholder="YYYY" min="1900" max="2100">
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="calculateBtn">Calculate Age</button>
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+                    <div class="result-group">
+                        <div class="result-item">
+                            <span id="years-result">--</span>
+                            <p>Years</p>
+                        </div>
+                        <div class="result-item">
+                            <span id="months-result">--</span>
+                            <p>Months</p>
+                        </div>
+                        <div class="result-item">
+                            <span id="days-result">--</span>
+                            <p>Days</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========= ADVERTISEMENT SECTION 1 ========= -->
+            <!-- Yahan apna AdSense ya dusra ad code paste karein -->
+            <section class="ads-section">
+                <div class="ad-placeholder">Advertisement</div>
+            </section>
+            <!-- ============================================= -->
+
+            <section class="content-section">
+                <h2>How Our Age Calculator Works</h2>
+                <p>Our age calculator computes your age based on your date of birth and the current date. It accurately determines the time that has passed, breaking it down into years, months, and days. This provides a more precise measure of age than just subtracting the birth year from the current year. It's a perfect tool for filling out applications, planning events, or just satisfying your curiosity!</p>
+
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary>How accurate is this calculator?</summary>
+                        <p>This calculator is highly accurate as it accounts for leap years and the varying number of days in each month to give you your precise age.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is my data saved?</summary>
+                        <p>No. We respect your privacy. All calculations are done directly in your browser. We do not store any personal information like your date of birth.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I calculate the age of a past or future event?</summary>
+                        <p>Yes, while it's designed for birth dates, you can use it to find the duration between any two dates. Just enter the start date in the input fields and compare it to the current date.</p>
+                    </details>
+                </div>
+            </section>
+
+             <!-- ========= ADVERTISEMENT SECTION 2 ========= -->
+            <!-- Yahan apna AdSense ya dusra ad code paste karein -->
+            <section class="ads-section">
+                <div class="ad-placeholder">Advertisement</div>
+            </section>
+            <!-- ============================================= -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Your Website Name. All Rights Reserved.</p>
+            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
